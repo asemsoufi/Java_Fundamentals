@@ -16,7 +16,15 @@ public class Exercise_01 {
 
     public static void main(String[] args) {
 
-        // write code here
+        int i = 10;
+        double d = 45.23;
+        float f = 12.5f;
+        char c = 'A';
+
+        System.out.println("Your int variable <i> equals: " + i);
+        System.out.println("Your double variable <d> equals: " + d);
+        System.out.println("Your float variable <f> equals: " + f);
+        System.out.println("Your char variable <c> equals: " + c);
 
     }
 }
