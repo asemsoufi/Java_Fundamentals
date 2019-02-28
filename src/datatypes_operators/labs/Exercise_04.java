@@ -1,5 +1,8 @@
 package datatypes_operators.labs;
 
+
+import java.util.Scanner;
+
 /**
  * Please demonstrate the use of all relational operators below. These include:
  *
@@ -18,6 +21,40 @@ class RelationalOperators {
         }
 
         // write your code below
+
+        // getting two numbers from he user to compare،
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter two numbers to evaluate: ");
+        Float num1 = input.nextFloat();
+        Float num2 = input.nextFloat();
+        System.out.println("You entered, " + num1 + ", and " + num2);
+
+        if (num1 < num2){
+            System.out.println("first number is less than second number.");
+        }
+        else if (num1 > num2){
+                System.out.println("first number is greater than second number.");
+        }
+        else {
+            System.out.println("first number and second number are equal.");
+        }
+
+        // play a quick guessing game, the number to guess is preset to 50
+
+        System.out.print("Guess an integer between 1 and 99: ");
+        int guess = input.nextInt();
+
+        if (guess == 50){
+            System.out.println("Wow, you did it!");
+        }
+
+        else if ((guess - 50) >= 10){
+            System.out.println("Oops, you aimed too high!");
+        }
+
+        else if ((guess - 50) <= -10){
+            System.out.println("Oops, you aimed too low!");
+        }
 
     }
 
