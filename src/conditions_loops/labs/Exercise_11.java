@@ -20,4 +20,31 @@ package conditions_loops.labs;
  */
 
 public class Exercise_11 {
+
+    public static void main(String[] args) {
+
+        for(int i = 1; i <= 10; i++){
+            for(int j = 1; j<= 10; j++){
+                int currentMulti = i * j;
+                // convert the current multiplication outcome to string to estimate its length
+                // this is to determine if more space needs to be added to keep numbers aligned
+                String currentString = Integer.toString(currentMulti);
+                // if the outcome is made-up of one digit, OR two digits at the left-most side of the table
+                // then add a space before the '|' to fill the second position and maintain alignment
+                if((currentString.length() == 1) || (currentString.length() == 2 && j == 10)) {
+                    System.out.print(currentMulti + " |");
+                }
+                // if the outcome is 2 digits long, AND inside the table,
+                // don't add an extra space before the '|'
+                else if(currentString.length() == 2 && j < 10){
+                    System.out.print(currentMulti + "|");
+                }
+                else{
+                    System.out.print(currentMulti + "|");
+                }
+            }
+            System.out.println();
+        }
+
+    }
 }
