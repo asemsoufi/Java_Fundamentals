@@ -1,5 +1,7 @@
 package conditions_loops.labs;
 
+import java.util.Scanner;
+
 /**
  * Conditions and Loops Exercise 5: Calculator
  *
@@ -16,4 +18,31 @@ package conditions_loops.labs;
  */
 
 public class Exercise_05 {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter two integers, smaller number first, space, then larger number: ");
+        int lower = scanner.nextInt();
+        int upper = scanner.nextInt();
+
+        // decalre a variable to hold the sum of numbers being added
+        int sum = 0;
+        // declare a variable to count how many numbers do we have between upper and lower bounds
+        int counter = 0;
+
+        float avg;
+
+        for (int i = lower; i <= upper; i++) {
+            counter += 1;
+            sum += i;
+        }
+
+        if (counter != 0 && sum != 0) {
+            System.out.println("Counter is:" + counter);
+            avg = (float) sum/counter;
+            System.out.println("The sum is: " + sum);
+            System.out.println("The average is: " + avg);
+        }
+    }
 }
