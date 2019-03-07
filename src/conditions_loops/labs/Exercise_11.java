@@ -34,11 +34,7 @@ public class Exercise_11 {
                 if((currentString.length() == 1) || (currentString.length() == 2 && j == 10)) {
                     System.out.print(currentMulti + " |");
                 }
-                // if the outcome is 2 digits long, AND inside the table,
-                // don't add an extra space before the '|'
-                else if(currentString.length() == 2 && j < 10){
-                    System.out.print(currentMulti + "|");
-                }
+                // else, don't add an extra space before the '|'
                 else{
                     System.out.print(currentMulti + "|");
                 }
