@@ -1,5 +1,7 @@
 package conditions_loops.labs;
 
+import java.util.ArrayList;
+
 /**
  * Conditions and Loops Exercise 11: Nested for loop
  *
