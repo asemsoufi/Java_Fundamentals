@@ -11,4 +11,28 @@ package labs_examples.arrays.labs;
  *
  */
 public class Exercise_06 {
+
+    public static void main(String[] args) {
+
+        int[] array = {11,10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+
+        System.out.println("Original array elements:");
+        for(int num : array){
+            System.out.print(num + " ");
+        }
+
+        int temp = array[0];
+
+        for(int i = 0; i < array.length/2; i++){
+            array[i] = array[array.length - (1 + i)];
+            array[array.length - (1 + i)] = temp;
+            temp = array[i+1];
+        }
+
+        System.out.println("\nElements in reversed order:");
+        for(int num : array){
+            System.out.print(num + " ");
+        }
+
+    }
 }

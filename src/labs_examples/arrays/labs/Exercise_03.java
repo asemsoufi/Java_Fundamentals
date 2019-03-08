@@ -20,5 +20,19 @@ public class Exercise_03 {
     public static void main(String[] args) {
 
         int[][] twoDArray = new int[5][5];
+
+        int currentNum = 0;
+        for(int i = 0; i < twoDArray.length; i++){
+            for(int j = 0; j < twoDArray[i].length; j++){
+                twoDArray[i][j] = currentNum += 3;
+            }
+        }
+
+        for(int[] i : twoDArray){
+            for(int j : i){
+                System.out.print(j + " ");
+            }
+            System.out.println();
+        }
     }
 }

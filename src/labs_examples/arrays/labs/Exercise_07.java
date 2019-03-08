@@ -1,5 +1,9 @@
 package labs_examples.arrays.labs;
 
+
+import java.util.ArrayList;
+
+
 /**
  *  ArrayLists
  *
@@ -10,4 +14,42 @@ package labs_examples.arrays.labs;
  *
  */
 public class Exercise_07 {
+
+    public static void main(String[] args) {
+
+        ArrayList<String> colorList = new ArrayList<>();
+
+        colorList.add("Blue");
+        colorList.add("White");
+        colorList.add("Red");
+        colorList.add("Black");
+        colorList.add("Yellow");
+        colorList.add("Green");
+        colorList.add("Brown");
+
+        for (String s : colorList){
+            System.out.print(s + " ");
+        }
+
+        // adding another color to the list
+        colorList.add("Magenta");
+
+        // removing Brown the list
+        colorList.remove("Brown");
+        System.out.print("\nThe current list has " + colorList.size() + " colors: ");
+
+        for (String s : colorList){
+            System.out.print(s + " ");
+        }
+
+        System.out.println();
+
+        if(colorList.contains("Blue")){
+            System.out.println("My favorite color, Blue, is in the list.");
+        }
+        else{
+            System.out.println("Blue needs to be added to the list.");
+        }
+
+    }
 }
