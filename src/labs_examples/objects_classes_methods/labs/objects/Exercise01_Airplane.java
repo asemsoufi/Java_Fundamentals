@@ -1,6 +1,6 @@
 package labs_examples.objects_classes_methods.labs.objects;
 
-class Exercise01_Airplane {
+class Objects_Airplane {
 
     public static void main(String[] args) {
 
