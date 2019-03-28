@@ -11,8 +11,10 @@ class Example_Ex03 {
         // 1) example
         MethodTraining.printString("Asem");
         MethodTraining.printString("Hadeel",3);
-
         System.out.println();
+
+        // 2) example
+        
 
         // 3) example
         System.out.println("largest number among: 1,45,7,89 is: " + MethodTraining.largestNum(1,45,7,89));
@@ -22,6 +24,9 @@ class Example_Ex03 {
         System.out.println("There are " + MethodTraining.consonants("Hello World") +
                 " consonants in Hello World.");
         System.out.println();
+
+        // 5) ASCII art example
+        MethodTraining.drawSolidSquare(14);
 
         // 6) example
         System.out.println("Is 79 a prime number: " + MethodTraining.isPrime(79));
@@ -49,6 +54,7 @@ class Example_Ex03 {
         System.out.println("The reversed array is: " + Arrays.toString(anArray));
 
     }
+
 }
 
 class MethodTraining {
@@ -89,6 +95,26 @@ class MethodTraining {
             }
         }
         return counter;
+    }
+
+    // 5) ASCII art example
+    public static void drawSolidSquare(int width){
+        for(int j = 1; j <= width+2; j++){
+            System.out.print('#');
+        }
+        System.out.println();
+        for(int i = 1; i <= width/2; i++){
+            System.out.print('#');
+            for(int j = 1; j <= width; j++){
+                System.out.print('*');
+            }
+            System.out.print('#');
+            System.out.println();
+        }
+        for(int j = 1; j <= width+2; j++){
+            System.out.print('#');
+        }
+        System.out.println("\n");
     }
 
     // 6) determine whether or not a number is prime
