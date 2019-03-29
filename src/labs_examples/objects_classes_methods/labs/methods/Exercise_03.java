@@ -14,10 +14,20 @@ class Example_Ex03 {
         System.out.println();
 
         // 2) example
-        
+        // pass by reference
+        AirplaneEngine thisEngine = new AirplaneEngine(900);
+        Pilot me = new Pilot("Asem", 42, 11);
+        Airplane myPlane = new Airplane(thisEngine, me);
+
+        Airplane yourPlane = myPlane;
+        Pilot you = new Pilot("Launchpad", 50, 30);
+        yourPlane.setpilot(you);
+
+        System.out.println("Why is my plane being flown by " + myPlane.getpilot().name + "?!");
+        System.out.println();
 
         // 3) example
-        System.out.println("largest number among: 1,45,7,89 is: " + MethodTraining.largestNum(1,45,7,89));
+        System.out.println("largest number among 1,45,7,89 is: " + MethodTraining.largestNum(1,45,7,89));
         System.out.println();
 
         // 4) example
@@ -71,6 +81,9 @@ class MethodTraining {
             System.out.println(string);
         }
     }
+
+    // 2) pass by value/reference
+    // no code here, just the example above
 
     // 3) return the largest of 4 numbers
     public static int largestNum(int a, int b, int c, int d) {
