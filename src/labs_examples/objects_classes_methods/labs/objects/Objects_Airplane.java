@@ -15,10 +15,10 @@ class Example_Airplane {
 
 class Airplane {
 
-    double fuelCapacity = 5000;
-    int currentFuelLevel = 100;
-    int maxSpeed = 900;
-    double weight = 10000;
+    private double fuelCapacity = 5000.4;
+    private int currentFuelLevel = 100;
+    private int maxSpeed = 900;
+    private double weight = 10000;
     AirplaneEngine engine;
     Pilot pilot;
 
@@ -90,7 +90,7 @@ class Airplane {
 
 class AirplaneEngine {
 
-    double horsePower;
+    private double horsePower;
 
     public AirplaneEngine(double horsePower) {
         this.horsePower = horsePower;
@@ -106,13 +106,13 @@ class AirplaneEngine {
 
 class Pilot {
 
-    String name;
-    int Age;
-    int yearsOfExperience;
+    private String name;
+    private int age;
+    private int yearsOfExperience;
 
     public Pilot(String name, int age, int yearsOfExperience) {
         this.name = name;
-        Age = age;
+        this.age = age;
         this.yearsOfExperience = yearsOfExperience;
     }
 
@@ -120,7 +120,7 @@ class Pilot {
     public String toString() {
         return "Pilot{" +
                 "name='" + name + '\'' +
-                ", Age=" + Age +
+                ", Age=" + age +
                 ", yearsOfExperience=" + yearsOfExperience +
                 '}';
     }
