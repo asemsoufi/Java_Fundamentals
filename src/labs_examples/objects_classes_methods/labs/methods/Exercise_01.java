@@ -21,12 +21,9 @@ public class Exercise_01 {
 
         System.out.println();
 
-        String[] attendeeslist = {"Asem","Jane","Mathew","Hadeel","ghena","Raghad"};
-        System.out.println("There are " + attendees(attendeeslist) + " people attending tonight's party.");
-        System.out.print("They are: ");
-        for (String name : attendeeslist){
-            System.out.print(name + ", ");
-        }
+
+        System.out.println("There are " + attendees("luthar", "Asem") + " people attending tonight's party.");
+
 
         System.out.println("it's going to be fun :)");
 
