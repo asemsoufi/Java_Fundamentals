@@ -138,9 +138,8 @@ class MethodTraining {
             return number >= 1;
         }
         else if(number % 2 == 0 || number % 3 == 0){
-                return false;
-            }
-
+            return false;
+        }
         else{
             int i = 5;
             while (i * i <= number) {
@@ -173,7 +172,7 @@ class MethodTraining {
         return smallArray;
     }
 
-    // 8)
+    // 8) takes 3 arguments (int maxNum, int divisor1, int divisor2), returns an Integer Arraylist.
     public static ArrayList<Integer> divArraylist(int maxNum, int divisor1, int divisor2){
         ArrayList<Integer> tempArrayList = new ArrayList<Integer> ();
         for(int num = 0; num <= maxNum; num++){
